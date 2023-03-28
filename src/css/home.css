@@ -1,0 +1,11 @@
+.content {
+  display: flex;
+  flex-direction: row;
+  padding: 2em;
+  gap: 2em;
+}
+
+.logout {
+  position: absolute;
+  float: right;
+}
