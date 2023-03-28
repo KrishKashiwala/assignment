@@ -1,7 +1,7 @@
 import { Button } from "@mui/material";
 import { useEffect, useState } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
-import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
+import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import { useNavigate } from "react-router-dom";
 import "../css/home.css";
@@ -12,6 +12,7 @@ const Home = () => {
   const navigate = useNavigate();
   useEffect(() => {
     fetchUsers();
+    // eslint-disable-next-line
   }, [page]);
   const fetchUsers = () => {
     setLoading(true);
